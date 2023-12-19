@@ -11,8 +11,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Quick Notes',
       themeMode: ThemeMode.system,
-      theme: ThemeData.light(), // Set the default light theme
-      darkTheme: ThemeData.dark(), // Set the dark theme
+      theme: ThemeData.light(
+        useMaterial3: true,
+      ), // Set the default light theme
+      darkTheme: ThemeData.dark(
+        useMaterial3: true,
+      ), // Set the dark theme
       home: HomePage(),
     );
   }
